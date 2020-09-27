@@ -13,12 +13,14 @@ function Home() {
         />
         <div className="home__row">
           <Product
+            id="215"
             title="The lean startup"
             price={29.99}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={5}
           />
           <Product
+            id="4125"
             title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
             price={239.99}
             image="https://images-na.ssl-images-amazon.com/images/I/91gRKbX%2BS8L._AC_SX450_.jpg"
@@ -27,21 +29,21 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
-            id="4252525"
+            id="46665"
             title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
             price={199.99}
             image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
             rating={3}
           />
           <Product
-            id="235252"
+            id="23652"
             title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
             price={98.99}
             image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
             rating={5}
           />
           <Product
-            id="235252"
+            id="23552"
             title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
             price={598.99}
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
@@ -50,7 +52,7 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
-            id="235252"
+            id="2321552"
             title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
             price={598.99}
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
