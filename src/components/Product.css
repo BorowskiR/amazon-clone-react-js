@@ -39,4 +39,6 @@
   border-color: #febd69;
   color: #111;
   padding: 4px;
+  outline: none;
+  cursor: pointer;
 }
