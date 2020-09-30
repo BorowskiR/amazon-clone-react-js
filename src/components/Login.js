@@ -1,28 +1,47 @@
 import React, { useState } from 'react';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { auth } from '../firebase';
 
 function Login() {
+  // pozwala nam zmienic url - np po zalogowaniu
+  const history = useHistory();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
+    console.log(email);
   };
   const handlePassword = (e) => {
     setPassword(e.target.value);
+    console.log(password);
   };
 
   const signIn = (e) => {
     e.preventDefault();
-
     // login firebase
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push('/');
+      })
+      .catch((error) => alert(error.message));
   };
 
   const register = (e) => {
     e.preventDefault();
-
     //register firebase
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        console.log(auth);
+
+        if (auth) {
+          history.push('/');
+        }
+      })
+      .catch((error) => alert(error.message));
   };
 
   return (
