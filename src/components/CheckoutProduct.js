@@ -12,7 +12,7 @@ const CheckoutProduct = forwardRef(
       });
     };
     return (
-      <div className="checkoutProduct" key={id} ref={ref}>
+      <div className="checkoutProduct" ref={ref}>
         <img className="checkoutProduct__image" src={image} alt="" />
         <div className="checkoutProduct__info">
           <p className="checkoutProduct__title">{title}</p>
