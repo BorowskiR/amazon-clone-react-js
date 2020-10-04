@@ -57,6 +57,10 @@ function Payment() {
         setError(null);
         setProcessing(false);
 
+        dispatch({
+          type: 'EMPTY_BASKET',
+        });
+
         //przekierowujemy uzytkownika dalej
         history.replace('./orders');
       });
