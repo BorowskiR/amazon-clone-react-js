@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Checkout from './components/Checkout';
 import Payment from './components/Payment';
 import Login from './components/Login';
+import Orders from './components/Orders';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { auth } from './firebase';
@@ -17,6 +18,7 @@ const promise = loadStripe(
 
 function App() {
   const [{}, dispatch] = useStateValue();
+
   // useEffect odpala sie przy ladowaniu apki
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -44,6 +46,10 @@ function App() {
           <Route exact path="/">
             <Header />
             <Home />
+          </Route>
+          <Route exact path="/orders">
+            <Header />
+            <Orders />
           </Route>
           <Route exact path="/checkout">
             <Header />
